@@ -1,4 +1,6 @@
 # Lights_Off
 
 
-/** Game board of Lights out.  *  * Properties:  *  * - nrows: number of rows of board  * - ncols: number of cols of board  * - chanceLightStartsOn: float, chance any cell is lit at start of game  *  * State:  *  * - hasWon: boolean, true when board is all off  * - board: array-of-arrays of true/false  *  *    For this board:  *       .  .  .  *       O  O  .     (where . is off, and O is on)  *       .  .  .  *  *    This would be: [[f, f, f], [t, t, f], [f, f, f]]  *  *  This should render an HTML table of individual <Cell /> components.  *  *  This doesn't handle any clicks --- clicks are on individual cells  *  **/
+Lights Out is a logic/puzzle game, played on a gird of individual lights, which can either be lit or unlit. The puzzle is won when when all of the lights are turned off.
+
+You can click on a cell to toggle that light — but it also toggles the light above it, to the left of it, to the right of it, and below it. (Cells on an edge or in the corner won’t flip as many lights, since they are missing some neighbors).
